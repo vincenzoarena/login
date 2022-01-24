@@ -11,16 +11,16 @@ body{
     text-decoration: none;
 }
 
-section {
-    border:  2px gray solid;
-    margin: 2rem auto;
+section div {
+    border:  2px #e4e3e7 solid;
+    /* margin: 2rem auto; */
     padding: 1rem;
     width: 50%;
     height: 50%;
 }
 
 section div ul li a{
-    color: white;
+    color: #ffffff;
     padding: 0.9;
 }
 
@@ -29,14 +29,20 @@ section div ul li a div{
     position: absolute;
 }
 
+#circle {
+    background-color: #ffffff;
+    border: #e4e3e7 2px solid;
+    border-radius: 50%;
+}
+
 .fb {
-    color: white;
+    color: #ffffff;
     background-color: #507bbf;
     text-decoration: none;
 }
 
 .g {
-    color: white;
+    color: #ffffff;
     background-color: #db4a30;
 }
 
@@ -61,3 +67,10 @@ section div ul li a div{
 a:any-link {
     text-decoration: none;
 }
+fieldset{
+    border: none;
+}
+
+/* Remember me: #7c7b83 
+Sign in with: #444155
+OR: #e4e3e7*/
