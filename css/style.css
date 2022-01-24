@@ -30,6 +30,11 @@ section div ul li a div{
 }
 
 #circle {
+    margin: 2rem;
+    color: #e4e3e7;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
     background-color: #ffffff;
     border: #e4e3e7 2px solid;
     border-radius: 50%;
