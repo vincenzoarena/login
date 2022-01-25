@@ -58,23 +58,34 @@ section div ul li a{
     align-items: center;
 }
 
-.fb {
+.fb, .g, .twt {
     color: #ffffff;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 12rem;
+}
+
+.fb {
     background-color: #507bbf;
     padding: 0.5rem;
-    
+    margin: 0.5rem;
+    width: 12rem;
 }
 
 .g {
     color: #ffffff;
     background-color: #db4a30;
     padding: 0.5rem;
+    margin: 0.5rem;
+    width: 12rem;
 }
 
 .twt {
     color: white;
     background-color: #65cdf2;
     padding: 0.5rem;
+    margin: 0.5rem;
+    width: 12rem;
 }
 
 .new {
@@ -115,6 +126,12 @@ form {
 
 fieldset{
     border: none;
+}
+
+.buttons {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 0.5rem;
 }
 
 .links {
