@@ -9,14 +9,19 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 section {
     width: 50%;
     height: 50%;
-    margin: 2rem auto;
-   /*  display: flex;
-    flex-direction: column; */
+    /* margin: 2rem auto; */
+    display: flex;
+    flex-direction: column;
 }
 
 section>div {
@@ -32,12 +37,10 @@ section div ul li a{
     color: #ffffff;
     padding: 0.9;
     border-left: #e4e3e7 1px solid;
+    
+    /* width: 0;
+    height: 0; */
 }
-
-/* section div ul li a div{
-    display: inline;
-    position: absolute;
-} */
 
 #circle {
     margin: 2rem;
@@ -58,34 +61,34 @@ section div ul li a{
     align-items: center;
 }
 
+.line1 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.line1, .line2 {
+    border-left: #e4e3e7 2px solid;
+}
+
 .fb, .g, .twt {
     color: #ffffff;
     padding: 0.5rem;
     margin: 0.5rem;
     width: 12rem;
+    position: relative;
 }
 
 .fb {
     background-color: #507bbf;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: 12rem;
 }
 
 .g {
-    color: #ffffff;
     background-color: #db4a30;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: 12rem;
 }
 
 .twt {
-    color: white;
     background-color: #65cdf2;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: 12rem;
 }
 
 .new {
@@ -94,11 +97,6 @@ section div ul li a{
     border-top: none;
     display: inline-flex;
     justify-content: center;
-    /* position: relative; */
-}
-
-.line1, .line2 {
-    border-left: #e4e3e7 2px solid;
 }
 
 .login {
@@ -115,7 +113,7 @@ a:any-link {
     text-decoration: none;
 }
 
-form {
+form. h4 {
     color: #444155;
     text-align: center;
 }
@@ -124,14 +122,37 @@ form {
     color: #7c7b83;
 }
 
+input[type="email"], input[type="password"] {
+    border: none;
+    padding: 0.5rem;
+    position: relative;
+}
+
 fieldset{
     border: none;
+    width: 1rem;
+}
+
+.right {
+    color:#444155;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+}
+
+.underline {
+    border-bottom: 1px solid #444155;
 }
 
 .buttons {
     display: inline-flex;
     justify-content: space-around;
-    padding: 0.5rem;
+    padding: 0.115rem;
 }
 
 .links {
@@ -145,10 +166,10 @@ fieldset{
     bottom: 0;
     cursor: pointer;
     border-radius: 5rem;
-    transition: 0.2s;
-    
 }
 
-/* Remember me: #7c7b83 
-Sign in with: #444155
-OR: #e4e3e7*/
+.container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
