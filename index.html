@@ -11,10 +11,23 @@
 <body>
     <section>
         <div>
-            <ul>
-                <li class="fb"><div><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></div><div>Facebook login</div></li>
-                <li class="g"><div><a href="https://www.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></div><div>Google login</div></li>
-                <li class="twt"><div><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></div><div>Twitter login</div></li>
+            <ul class="links">
+                <li class="fb">
+                    <div>
+                        <a href="https://www.facebook.com" target="_blank">&nbsp; <i class="fab fa-facebook-f"></i>&nbsp; &nbsp; Facebook login</a>
+                    </div>
+                </li>
+                <li class="g">
+                    <div>
+                        <a href="https://www.google.com" target="_blank">&nbsp; <i class="fab fa-google-plus-g"></i>&nbsp; &nbsp; Google login</a>
+                    </div>
+                    <div></div>
+                </li>
+                <li class="twt">
+                    <div>
+                        <a href="https://www.twitter.com" target="_blank">&nbsp; <i class="fab fa-twitter"></i>&nbsp; &nbsp; Twitter login</a>
+                    </div>
+                </li>
             </ul>
             <!-- <div class="fb">
                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>Facebook login</a>
@@ -26,11 +39,11 @@
                 <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter login</a>
             </div> -->
             <div id="circle">
-                OR
+                <span>OR</span>
             </div>
             <div>
             </div>
-            <div>
+            <div class="form">
                 <form action="index.js" method="GET">
                     <fieldset>
                         <div>
@@ -49,7 +62,7 @@
                         </div>
                     </fieldset>
                     
-                    <input type="checkbox" name="agree">Remember me
+                    <input type="checkbox" name="agree">&nbsp; Remember me
                     <input type="submit" value="LOGIN" class="login">
                 </form>
             </div>

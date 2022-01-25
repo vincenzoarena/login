@@ -11,12 +11,21 @@ body{
     text-decoration: none;
 }
 
-section div {
-    border:  2px #e4e3e7 solid;
-    /* margin: 2rem auto; */
-    padding: 1rem;
+section {
     width: 50%;
     height: 50%;
+    margin: 2rem auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+section>div {
+    border:  2px #e4e3e7 solid;
+    padding: 1rem;
+    width: 28rem;
+    /*  height: 25rem; */
+    display: inline-flex;
+    
 }
 
 section div ul li a{
@@ -31,19 +40,29 @@ section div ul li a div{
 
 #circle {
     margin: 2rem;
+    position: relative;
     color: #e4e3e7;
     width: 2rem;
     height: 2rem;
-    text-align: center;
+    /* text-align: center; */
     background-color: #ffffff;
     border: #e4e3e7 2px solid;
     border-radius: 50%;
 }
 
+#circle>span {
+    position: absolute;
+    /* border: 1px red solid; */
+    margin-top: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
 .fb {
     color: #ffffff;
     background-color: #507bbf;
-    text-decoration: none;
+    
 }
 
 .g {
@@ -59,6 +78,10 @@ section div ul li a div{
 .new {
     color: #378ee2;
     background-color: #f2f9ff;
+    border-top: none;
+    display: inline-flex;
+    justify-content: space-around;
+    /* position: relative; */
 }
 
 .login {
@@ -66,7 +89,9 @@ section div ul li a div{
     background-color: #65b1ff;
     border: none;
     border-radius: 0.2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    width: 5rem;
+    height: 1.5rem;
 }
 
 a:any-link {
@@ -74,6 +99,10 @@ a:any-link {
 }
 fieldset{
     border: none;
+}
+
+.links {
+    width: 15rem;
 }
 
 /* Remember me: #7c7b83 
