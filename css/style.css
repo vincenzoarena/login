@@ -15,8 +15,8 @@ section {
     width: 50%;
     height: 50%;
     margin: 2rem auto;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 section>div {
@@ -31,6 +31,7 @@ section>div {
 section div ul li a{
     color: #ffffff;
     padding: 0.9;
+    border-left: #e4e3e7 1px solid;
 }
 
 section div ul li a div{
@@ -44,7 +45,6 @@ section div ul li a div{
     color: #e4e3e7;
     width: 2rem;
     height: 2rem;
-    /* text-align: center; */
     background-color: #ffffff;
     border: #e4e3e7 2px solid;
     border-radius: 50%;
@@ -52,7 +52,6 @@ section div ul li a div{
 
 #circle>span {
     position: absolute;
-    /* border: 1px red solid; */
     margin-top: 10%;
     margin-left: 10%;
     justify-content: center;
@@ -80,8 +79,12 @@ section div ul li a div{
     background-color: #f2f9ff;
     border-top: none;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
     /* position: relative; */
+}
+
+.line1, .line2 {
+    border-left: #e4e3e7 2px solid;
 }
 
 .login {
@@ -97,12 +100,26 @@ section div ul li a div{
 a:any-link {
     text-decoration: none;
 }
+
+form {
+    color: #444155;
+    text-align: center;
+}
+
+[type="checkbox"] {
+    color: #7c7b83;
+}
+
 fieldset{
     border: none;
 }
 
 .links {
     width: 15rem;
+    justify-content: space-around;
+    position: absolute;
+    padding: 1rem;
+    
 }
 
 /* Remember me: #7c7b83 
