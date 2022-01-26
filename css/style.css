@@ -17,37 +17,45 @@ body{
 }
 
 section {
-    width: 50%;
-    height: 50%;
-    /* margin: 2rem auto; */
+    width: 60vw;
+    height: 50vh;
+    margin: 2vw auto;
     display: flex;
     flex-direction: column;
 }
 
 section>div {
     border:  2px #e4e3e7 solid;
-    padding: 1rem;
-    width: 28rem;
-    /*  height: 25rem; */
-    /*  display: inline-flex; */
-    
+    padding: 1vw;
+    width: 78vw;    
 }
 
 section div ul li a{
     color: #ffffff;
-    padding: 0.9;
-    border-left: #e4e3e7 1px solid;
-    
-    /* width: 0;
-    height: 0; */
+    /* padding: 0.9vw; */
+    width: 0;
+    height: 0;
+}
+
+section div ul li {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #circle {
-    margin: 2rem;
+    margin: 5vw auto;
     position: relative;
     color: #e4e3e7;
-    width: 2rem;
-    height: 2rem;
+    width: 6vw;
+    height: 12vh;
     background-color: #ffffff;
     border: #e4e3e7 2px solid;
     border-radius: 50%;
@@ -59,12 +67,25 @@ section div ul li a{
     margin-left: 10%;
     justify-content: center;
     align-items: center;
+    flex: 3vw;
 }
 
-.line1 {
+.line1, .line3 {
     position: relative;
-    justify-content: center;
-    align-items: center;
+    z-index: 0;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.line1 {position: relative;
+    top: -18vh;
+    right: -3vw;}
+
+.line3 {
+    position: relative;
+    top: 18vh;
+    right: -3vw;
+    border-right: #e4e3e7 2px solid;
 }
 
 .line1, .line2 {
@@ -73,10 +94,22 @@ section div ul li a{
 
 .fb, .g, .twt {
     color: #ffffff;
+    padding: 0.5vw;
+    margin: 3vw;
+    width: 25vw;
+    text-align: left;
+    align-items: center;
+    position: relative;
+}
+
+.fab {
+    border-right: #e4e3e7 1px solid;
     padding: 0.5rem;
     margin: 0.5rem;
-    width: 12rem;
-    position: relative;
+}
+
+.fa-facebook-f {
+    padding-right: 0.8rem;
 }
 
 .fb {
@@ -118,13 +151,14 @@ form {
     text-align: center;
 }
 
-[type="checkbox"] {
+.buttons [type="checkbox"] {
     color: #7c7b83;
+    font-size: 2vh;
 }
 
 input[type="email"], input[type="password"] {
     border: none;
-    padding: 0.5rem;
+    padding: 0.5vw;
     position: relative;
 }
 
@@ -133,6 +167,9 @@ fieldset{
     width: 1rem;
 }
 
+fieldset div{
+    display: inline;
+}
 .right {
     color:#444155;
     display: inline-flex;
@@ -143,6 +180,7 @@ fieldset{
 .shapes {
     display: flex;
     justify-content: center;
+    flex-direction: row; 
 }
 
 .underline {
@@ -156,20 +194,14 @@ fieldset{
 }
 
 .links {
-    width: 15rem;
+    width: 15vw;
     justify-content: space-around;
     position: absolute;
-    padding: 1rem;
-    top: 0;
+    padding: 1vw;
+    /* top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     cursor: pointer;
-    border-radius: 5rem;
 }
 
-.container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
