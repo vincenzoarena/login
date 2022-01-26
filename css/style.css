@@ -7,6 +7,7 @@
 }
 
 body{
+    background-color: gray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     display: flex;
@@ -17,16 +18,30 @@ body{
 }
 
 section {
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    margin: 60vw auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+section {
+    background-color: #ffffff;
     width: 60vw;
     height: 50vh;
     margin: 2vw auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    border:  2px #e4e3e7 solid;
+    padding: 0.5vw;
 }
 
 section>div {
     border:  2px #e4e3e7 solid;
-    padding: 1vw;
+    padding: 0.5vw;
     width: 78vw;    
 }
 
@@ -38,10 +53,12 @@ section div ul li a{
 }
 
 section div ul li {
+    display: inline-block;
     text-decoration: none;
 }
 
 .container {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +150,7 @@ section div ul li {
 }
 
 .login {
-    color: white;
+    color: #ffffff;
     background-color: #65b1ff;
     border: none;
     border-radius: 0.2rem;
@@ -149,9 +166,10 @@ a:any-link {
 form {
     color: #444155;
     text-align: center;
+    font-size: 3vh;
 }
 
-.buttons [type="checkbox"] {
+.buttonslow>[type="checkbox"] {
     color: #7c7b83;
     font-size: 2vh;
 }
@@ -193,6 +211,10 @@ fieldset div{
     padding: 0.115rem;
 }
 
+p{
+    width: 13vw;
+}
+
 .links {
     width: 15vw;
     justify-content: space-around;
@@ -204,4 +226,3 @@ fieldset div{
     bottom: 0; */
     cursor: pointer;
 }
-
