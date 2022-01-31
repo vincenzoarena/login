@@ -171,6 +171,7 @@ form {
 
 .buttonslow>[type="checkbox"] {
     color: #7c7b83;
+    width: 2vw;
     font-size: 2vh;
     display: flex;
     flex-direction: row;
