@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fonts/css/all.css"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
     <title>Login page</title>
 </head>
 <body>
     <section>
-        <div class="container">
+        <article>
             <div class="social">
                 <ul>
                     <li class="fb">
@@ -21,9 +18,7 @@
                     <li class="g">
                         <div>
                             <a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i>Google login</a>
-                            
                         </div>
-                        <div></div>
                     </li>
                     <li class="twt">
                         <div>
@@ -32,56 +27,48 @@
                     </li>
                 </ul>
             </div>
-             <!--    <div class="fb">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>Facebook login</a>
-                </div>
-                <div class="g">
-                    <a href="https://www.google.com" target="_blank"><i class="fab fa-google-plus-g"></i>Google login</a>
-                </div>
-                <div class="twt">
-                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter login</a>
-                </div>
-            </div> -->
             <div class="shapes">
                 <div class="line1">
                 </div>
-                <div class="line3">
+                <div class="line2">
                 </div>
                 <div id="circle">
                     <span>OR</span>
                 </div>
-            </div>    
+            </div> 
             <div class="right">
                 <form action="index.js" method="GET">Sign in with
                     <fieldset class="underline">
                         <div class="buttons">
-                            <i class="far fa-user"></i><input type="email" name="email" placeholder="Username or email" required>
+                            <input type="email" name="email" placeholder="👤 Username or email" required>
                         </div>
                     </fieldset>
                     <fieldset class="underline">
                         <div class="buttons">
-                            <i class="fas fa-lock"></i><input type="password" name="password" id="7" placeholder="Password" required>
+                            <input type="password" name="password" id="7" placeholder="🔒 Password" required>
                         </div>
                     </fieldset>
-                    <fieldset class="buttonslow">
+                    <fieldset>
                         <div>
-                            <input type="checkbox" name="agree">
-                            <p>Remember me</p>
-                            <input type="submit" value="LOGIN" class="login">
+                            <input type="checkbox" name="agree" class="buttonslow">
+                            <p class="buttonslow">Remember me</p>
+                            <input type="submit" value="LOGIN" class="login buttonslow">
                         </div>
                     </fieldset>
                 </form>
             </div>
-        </div>
-        <div class="new">
+        </article>
+        <article class="new">    
             <div>
-                <a href="./html/register.html">Register now&nbsp; </a>
+                <div>
+                    <a href="./html/register.html">Register now&nbsp; </a>
+                </div>
+                <div class="line2"></div>
+                <div>
+                    <a href="./html/recover.html">&nbsp;Forgotten?</a>
+                </div>
             </div>
-            <div class="line2"></div>
-            <div>
-                <a href="./html/recover.html">&nbsp;Forgotten?</a>
-            </div>
-        </div>
+        </article>
     </section>
 </body>
 </html>
