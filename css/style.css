@@ -7,6 +7,7 @@
 }
 
 body{
+    background-color: gray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     display: flex;
@@ -17,66 +18,70 @@ body{
 }
 
 section {
-    width: 50%;
-    height: 50%;
-    /* margin: 2rem auto; */
+    background-color: white;
+    /* border: 2px red solid; */
+    width: 70vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    padding: 2vw;    
 }
 
-section>div {
-    border:  2px #e4e3e7 solid;
-    padding: 1rem;
-    width: 28rem;
-    /*  height: 25rem; */
-    /*  display: inline-flex; */
-    
-}
-
-section div ul li a{
+section article div ul li a{
     color: #ffffff;
-    padding: 0.9;
-    border-left: #e4e3e7 1px solid;
-    
-    /* width: 0;
-    height: 0; */
 }
 
-#circle {
-    margin: 2rem;
-    position: relative;
-    color: #e4e3e7;
-    width: 2rem;
-    height: 2rem;
+article {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
-    border: #e4e3e7 2px solid;
-    border-radius: 50%;
+    border: 2px #e4e3e7 solid;
+    width: 65vw;
+    height: 60vh;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
-#circle>span {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 10%;
-    justify-content: center;
+ul {
+    list-style: none;
+}
+.fb, .g, .twt {
+    color: #ffffff;
+    padding: 0.5vw;
+    margin: 3vw;
+    width: 25vw;
+    text-align: left;
     align-items: center;
-}
-
-.line1 {
     position: relative;
-    justify-content: center;
-    align-items: center;
 }
 
-.line1, .line2 {
-    border-left: #e4e3e7 2px solid;
+.fab {
+    border-right: #e4e3e7 1px solid;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 .fb, .g, .twt {
     color: #ffffff;
+    padding: 0.5vw;
+    margin: 3vw;
+    width: 25vw;
+    text-align: left;
+    align-items: center;
+    position: relative;
+}
+
+.fab {
+    border-right: #e4e3e7 1px solid;
     padding: 0.5rem;
     margin: 0.5rem;
-    width: 12rem;
-    position: relative;
+}
+
+.fa-facebook-f {
+    padding-right: 0.8rem;
 }
 
 .fb {
@@ -90,6 +95,157 @@ section div ul li a{
 .twt {
     background-color: #65cdf2;
 }
+a:any-link {
+    text-decoration: none;
+}
+
+#circle {
+    margin: 5vw auto;
+    position: relative;
+    color: #e4e3e7;
+    width: 6vw;
+    height: 12vh;
+    background-color: #ffffff;
+    border: #e4e3e7 2px solid;
+    border-radius: 50%;
+}
+
+#circle>span {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    flex: 3vw;
+}
+
+.line1, .line2 {
+    position: relative;
+    z-index: 0;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.line1 {
+    position: relative;
+    top: -10vh;
+    right: -3.2vw;
+    border-left: #e4e3e7 2px solid;
+}
+
+.line2 {
+    position: relative;
+    top: 10vh;
+    right: -3vw;
+    border-right: #e4e3e7 2px solid;
+}
+
+.line3 {
+    border-left: #e4e3e7 2px solid;
+    z-index: 1;
+}
+
+.new >div>div{
+    color: #378ee2;
+    background-color: #f2f9ff;
+    border-top: none;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.login {
+    color: #ffffff;
+    background-color: #65b1ff;
+    border: none;
+    border-radius: 0.2rem;
+    /* padding: 1rem; */
+    width: 5rem;
+    height: 1.5rem;
+}
+
+form {
+    color: #444155;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.buttonslow>[type="checkbox"] {
+    color: #7c7b83;
+    width: 2vw;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="email"], input[type="password"] {
+    border: none;
+    padding: 0.5vw;
+    position: relative;
+}
+
+fieldset{
+    border: none;
+    width: 1rem;
+}
+
+/* fieldset div{
+    display: inline;
+} */
+.right {
+    color:#444155;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px red solid; */
+    width: 25vw;
+    height: 60vh;
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -3vw;
+    padding-right: -vw; 
+    /* border: 2px red solid; */
+}
+
+.underline {
+    border-bottom: 1px solid #444155;
+}
+
+.buttonslow {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-end; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.115rem;
+}
+
+p{
+    width: 13vw;
+}
+
+.links {
+    width: 15vw;
+    justify-content: space-around;
+    position: absolute;
+    padding: 1vw;
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    position: relative;
+    /* left: -3vw; */
+    /* border: 2px red solid; */
+}
 
 .new {
     color: #378ee2;
@@ -99,77 +255,6 @@ section div ul li a{
     justify-content: center;
 }
 
-.login {
-    color: white;
-    background-color: #65b1ff;
-    border: none;
-    border-radius: 0.2rem;
-    /* padding: 1rem; */
-    width: 5rem;
-    height: 1.5rem;
-}
-
 a:any-link {
     text-decoration: none;
-}
-
-form {
-    color: #444155;
-    text-align: center;
-}
-
-[type="checkbox"] {
-    color: #7c7b83;
-}
-
-input[type="email"], input[type="password"] {
-    border: none;
-    padding: 0.5rem;
-    position: relative;
-}
-
-fieldset{
-    border: none;
-    width: 1rem;
-}
-
-.right {
-    color:#444155;
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.shapes {
-    display: flex;
-    justify-content: center;
-}
-
-.underline {
-    border-bottom: 1px solid #444155;
-}
-
-.buttons {
-    display: inline-flex;
-    justify-content: space-around;
-    padding: 0.115rem;
-}
-
-.links {
-    width: 15rem;
-    justify-content: space-around;
-    position: absolute;
-    padding: 1rem;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    cursor: pointer;
-    border-radius: 5rem;
-}
-
-.container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
