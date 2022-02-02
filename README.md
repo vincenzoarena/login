@@ -6,4 +6,6 @@ This is the given Login page example.
 
 ![Esempio login](./img/login.png)
 
-#### Still a work in progress...
+#### This is my take on the login page and you can see it by clicking on the image down here.
+
+[![My login page](./img/my-login.png)](https://vincenzoarena.github.io/login/)
